@@ -1,0 +1,34 @@
+<%- include('../partials/header.ejs')%>
+<% if(submissions.length) {%>
+    <table>
+        <tr>
+            <td>
+                <p>Assignment Name</p>
+            </td>
+            <td>
+                <p>Answer Submitted</p>
+            </td>
+            <td>
+                <p>Grade</p>
+            </td>
+        </tr>
+    <% submissions.forEach(submission => { %>
+             <tr>
+                 <td>
+                     <label> <%= submission.assignmentName %> </label>
+                 </td>
+                 <td>
+                    <label> <%= submission.assignmentSubmission %> </label>
+                 </td>
+
+                 <td>
+                    <form method="POST" action = "/course/gradeassignment/<%=submission.id%>">
+                        <input type="text" id="grade" name="grade" class = "fixed-width" value = "<%= submission.grade %>" required>
+                        <button>Post</button>
+                    </form>
+                </td>
+             </tr>
+     <% }) %>
+    </table>
+ <%}%>
+<%- include('../partials/footer.ejs')%>

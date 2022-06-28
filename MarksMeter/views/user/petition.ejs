@@ -1,0 +1,22 @@
+<%- include('../partials/header.ejs')%>
+<form method="POST" action="/user/petition">
+    <table>
+        <tr>
+            <td><label for="semester">Semester</label></td>
+            <td><input type="text" id="semester" name="semester" class = "fixed-width" required></td>
+        </tr>
+        <tr>
+            <td><label for="courseId">Course Id</label></td>
+            <td><input type="text" id="courseId" name="courseId" class = "fixed-width"  required></td>
+        </tr>
+        <tr>
+            <td><label for="description">Description</label></td>
+            <td><input type="text" id="description" name="description" class = "fixed-width"  required></td>
+        </tr>
+        <tr>
+            <td colspan="2" class = "align-right"><button>Post</button></td>
+        </tr>
+    </table>  
+</form>
+
+<%- include('../partials/footer.ejs')%>

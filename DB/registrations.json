@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "62b389ca5dc6b7f7641a4cff"
+  },
+  "courseId": {
+    "$oid": "62b389475dc6b7f7641a4cfc"
+  },
+  "studentId": {
+    "$oid": "626325ec512b3ed7e89b6776"
+  },
+  "grade": "A"
+}]

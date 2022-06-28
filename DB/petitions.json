@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "62b39ecaf4172baeccc510c1"
+  },
+  "semester": "spring",
+  "description": "For First Assignment",
+  "studentId": {
+    "$oid": "626325ec512b3ed7e89b6776"
+  },
+  "petitionStatus": "Accepted",
+  "courseId": {
+    "$oid": "62b389475dc6b7f7641a4cfc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62b733f2b04b57e116e13fa5"
+  },
+  "semester": "Spring",
+  "description": "test 2",
+  "studentId": {
+    "$oid": "626325ec512b3ed7e89b6776"
+  },
+  "petitionStatus": "Rejected",
+  "courseId": {
+    "$oid": "62b389475dc6b7f7641a4cfc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62b7fa7330e6dff10226e802"
+  },
+  "semester": "Spring",
+  "description": "third petition",
+  "studentId": {
+    "$oid": "626325ec512b3ed7e89b6776"
+  },
+  "petitionStatus": "Accepted",
+  "courseId": {
+    "$oid": "62b389475dc6b7f7641a4cfc"
+  },
+  "__v": 0
+}]

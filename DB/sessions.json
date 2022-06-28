@@ -1,0 +1,9 @@
+[{
+  "_id": "WNXQjRwvndeihLGGQ8EW3NxewVEx30Nn",
+  "expires": {
+    "$date": {
+      "$numberLong": "1656282048977"
+    }
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":3600000,\"expires\":\"2022-06-26T22:20:48.924Z\",\"httpOnly\":true,\"path\":\"/\"},\"flash\":{},\"user\":{\"_id\":\"626325ec512b3ed7e89b6776\",\"firstName\":\"Prasanna\",\"lastName\":\"Kumar\",\"email\":\"student@uncc.edu\",\"password\":\"$2b$10$T758fjy6jeMEzZjrdM.3M.w6tULNPru90p1/O9pyNzoa1LD0PY6gu\",\"__v\":0,\"role\":\"student\"}}"
+}]

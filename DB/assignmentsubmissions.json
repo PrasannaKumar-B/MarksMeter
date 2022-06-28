@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "62b55469e1a207d6209caac5"
+  },
+  "assignmentSubmission": "first submission",
+  "studentId": {
+    "$oid": "626325ec512b3ed7e89b6776"
+  },
+  "courseId": {
+    "$oid": "62b389475dc6b7f7641a4cfc"
+  },
+  "semester": "Spring",
+  "assignmentName": "First",
+  "grade": "A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62b7fa2830e6dff10226e7e0"
+  },
+  "assignmentSubmission": "second submission",
+  "studentId": {
+    "$oid": "626325ec512b3ed7e89b6776"
+  },
+  "courseId": {
+    "$oid": "62b389475dc6b7f7641a4cfc"
+  },
+  "semester": "Spring",
+  "assignmentName": "second",
+  "grade": "A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62b7fc791d4d85f1714a2c96"
+  },
+  "assignmentSubmission": " third submission",
+  "studentId": {
+    "$oid": "626325ec512b3ed7e89b6776"
+  },
+  "courseId": {
+    "$oid": "62b389475dc6b7f7641a4cfc"
+  },
+  "semester": "Spring",
+  "assignmentName": "third assignment",
+  "grade": "C",
+  "__v": 0
+}]

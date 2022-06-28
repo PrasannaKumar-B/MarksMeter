@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "62b54f09451eb3d594cd3ec0"
+  },
+  "semester": "Spring",
+  "courseId": "ITCS 5122",
+  "assignmentName": "First",
+  "instructions": "Please answer in the text box",
+  "courseRefId": {
+    "$oid": "62b389475dc6b7f7641a4cfc"
+  },
+  "assignmentStatus": "submitted",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62b551ddac0c6fd5afb796ca"
+  },
+  "semester": "Spring",
+  "courseId": "ITCS 5122",
+  "assignmentName": "second",
+  "instructions": "Please enter in text box",
+  "courseRefId": {
+    "$oid": "62b389475dc6b7f7641a4cfc"
+  },
+  "assignmentStatus": "submitted",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62b7fba51d4d85f1714a2c4e"
+  },
+  "semester": "Spring",
+  "courseId": "ITCS 5122",
+  "assignmentName": "third assignment",
+  "instructions": "submit the text here",
+  "courseRefId": {
+    "$oid": "62b389475dc6b7f7641a4cfc"
+  },
+  "assignmentStatus": "submitted",
+  "__v": 0
+}]

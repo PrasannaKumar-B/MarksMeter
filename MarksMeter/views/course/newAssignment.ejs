@@ -1,0 +1,26 @@
+<%- include('../partials/header.ejs')%>
+<form method="POST" action="/course/assignment/new">
+    <table>
+        <tr>
+            <td><label for="semester">Semester</label></td>
+            <td><input type="text" id="semester" name="semester" class = "fixed-width" required></td>
+        </tr>
+        <tr>
+            <td><label for="courseId">Course Id</label></td>
+            <td><input type="text" id="courseId" name="courseId" class = "fixed-width"  required></td>
+        </tr>
+        <tr>
+            <td><label for="assignmentName">Assignment Name</label></td>
+            <td><input type="text" id="assignmentName" name="assignmentName" class = "fixed-width"  required></td>
+        </tr>
+        <tr>
+            <td><label for="instructions">Instructions</label></td>
+            <td><input type="text" id="instructions" name="instructions" class = "fixed-width"  required></td>
+        </tr>
+        <tr>
+            <td colspan="2" class = "align-right"><button>Create Assignment</button></td>
+        </tr>
+    </table>  
+</form>
+
+<%- include('../partials/footer.ejs')%>

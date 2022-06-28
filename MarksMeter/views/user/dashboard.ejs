@@ -1,0 +1,113 @@
+<%- include('../partials/header.ejs')%>
+<p class="profileWelcome"><b>Welcome <%= user.firstName %> <%= user.lastname%></b> </p>
+<% if(user.role=='student') {%>
+<h3>Courses:</h3>
+<% if(courses.length) {%>
+    <table>
+        <tr>
+            <td>
+                <b>Course Name</b>
+            </td>
+        </tr>
+    <%courses.forEach(course => { %>
+            <tr>
+                <td>
+                    <a href="/course/<%=course.courseId.id%>"><%= course.courseId.courseName %></a>
+                </td>
+            </tr>
+        </table>
+    <% }); %> 
+<%}%>
+<br>
+<h3>Petitions:</h3>
+<% if(petitions.length) {%>
+    <table>
+        <tr>
+            <td>
+                <b>Subject</b>
+            </td>
+            <td>
+                <b>Description</b>
+            </td>
+            <td>
+                <b>Status</b>
+            </td>
+        </tr>
+    <%petitions.forEach(petition => { %>
+        <tr>
+            <td>
+                <p><%= petition.courseId.courseName %></p>
+            </td>
+            <td>
+                <p><%= petition.description %></p>
+            </td>
+            <td>
+                <p><%= petition.petitionStatus %></p>
+            </td>
+        </tr>
+    <% }); %>
+</table> 
+<%}%>
+<%}%>
+<%if(user.role=='professor'){%>
+    <h3>Courses:</h3>
+    <% if(courses.length) {%>
+        <table>
+            <tr>
+                <td>
+                    <b>Course Name</b>
+                </td>
+            </tr>
+        <%courses.forEach(course => { %>
+                <tr>
+                    <td>
+                        <a href="/course/grade/<%=course.id%>"><%= course.courseName %></a>
+                    </td>
+                </tr>
+            </table>
+        <% }); %> 
+    <%}%>
+    <h3>Petitions:</h3>
+<% if(petitions.length) {%>
+    <table>
+        <tr>
+            <td>
+                <b>Subject</b>
+            </td>
+            <td>
+                <b>Description</b>
+            </td>
+            <td>
+                <b>Status</b>
+            </td>
+            <td>
+                <b>Action</b>
+            </td>
+        </tr>
+    <%petitions.forEach(petition => { %>
+        <tr>
+            <td>
+                <p><%= petition.courseId.courseName %></p>
+            </td>
+            <td>
+                <p><%= petition.description %></p>
+            </td>
+            <td>
+                <p><%= petition.petitionStatus %></p>
+            </td>
+            <td>
+                <% if(petition.petitionStatus == 'Pending'){ %>
+                <form method="POST" action="/user/petition/accept/<%= petition.id %>">
+                    <button>Accept</button>
+                </form>
+                <form method="POST" action="/user/petition/reject/<%= petition.id %>">
+                    <button>Reject</button>
+                </form>
+                <%}%>
+            </td>
+        </tr>
+    <% }); %>
+</table> 
+<% } %>
+<%}%>
+<%- include('../partials/footer.ejs')%>

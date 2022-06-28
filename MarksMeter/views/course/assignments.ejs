@@ -1,0 +1,69 @@
+<%- include('../partials/header.ejs')%>
+<h2>Pending Assignments : </h2>
+<% if(assignments.length) {%>
+    <table>
+        <tr>
+            <td>
+                <p>Assignment Name</p>
+            </td>
+            <td>
+                <p>Instructions</p>
+            </td>
+            <td>
+                <p>Submission</p>
+            </td>
+        </tr>
+   <% assignments.forEach(assignment => { %>
+        <%if(assignment.assignmentStatus == "created"){ %>
+            <tr>
+                <td>
+                    <label> <%= assignment.assignmentName %> </label>
+                </td>
+                <td>
+                    <label> <%= assignment.instructions %> </label>
+                </td>
+                <td>
+                    <form method = "POST" action="/course/assignment/<%= assignment.id %>">
+                        <input type="text" id="assignmentSubmission" name="assignmentSubmission" class = "fixed-width"  required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td colspan="2" class = "align-right"><button>Submit</button></td>
+            </form>
+            </tr>
+            <%}%>
+    <% }) %>
+</table>
+<%}%>
+<h2>Submitted Assignments : </h2>
+<% if(submissions.length) {%>
+    <table>
+        <tr>
+            <td>
+                <p>Assignment Name</p>
+            </td>
+            <td>
+                <p>Answer Submitted</p>
+            </td>
+            <td>
+                <p>Grade</p>
+            </td>
+        </tr>
+    <% submissions.forEach(submission => { %>
+             <tr>
+                 <td>
+                     <label> <%= submission.assignmentName %> </label>
+                 </td>
+                 <td>
+                    <label> <%= submission.assignmentSubmission %> </label>
+                 </td>
+                 <td><label><%= submission.grade %></label></td>
+             </tr>
+     <% }) %>
+    </table>
+ <%}%>
+<%- include('../partials/footer.ejs')%>

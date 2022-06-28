@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Marks Meter</title>
+</head>
+<body>
+    <nav>
+        <h2>UNCC</h2>
+        <a href='/'>Home</a>
+        <%if(user){%>
+        <a href='/user/logout'>Logout</a>
+        <%if(user.role=='student'){%>
+            <a href='/user/profile'>Profile</a>
+            <a href='/user/petition'>Petition</a>
+        <%}%>
+        <% if(user.role=='professor'){%>
+            <a href='/user/professor/profile'>Profile</a>
+            <a href='/course/new/assignment'>Create Assignment</a>
+        <%}%>
+        <%}%>
+    </nav>

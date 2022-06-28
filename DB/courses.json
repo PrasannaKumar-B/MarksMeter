@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "62b389475dc6b7f7641a4cfc"
+  },
+  "courseId": "ITCS 5122",
+  "courseName": "SPL",
+  "semester": "Spring 2022",
+  "teacher": {
+    "$oid": "626338110f593dd90b8d9f4e"
+  }
+}]
